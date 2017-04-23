@@ -1,8 +1,20 @@
 <resources>
     <string name="app_name">GeoQuiz2</string>
+
+    <!-- Buttons -->
     <string name="true_button">True</string>
     <string name="false_button">False</string>
+    <string name="next_button">Next</string>
+    <string name="previous_button">Previous</string>
+
+    <!-- Toasts -->
     <string name="correct_toast">Correct!</string>
     <string name="incorrect_toast">Incorrect!</string>
-    <string name="question_text">Finland is part of Scandinavia.</string>
+
+    <!-- Questions-->
+    <string name="question1">Finland is part of Scandinavia.</string>
+    <string name="question2">Lake Baikal is the world\'s deepest freshwater lake.</string>
+    <string name="question3">Sydney is the capital of Australia.</string>
+    <string name="question4">Maine is the closest US\'s state to Africa.</string>
+    <string name="question5">San Marino is the world\'s smallest country.</string>
 </resources>
