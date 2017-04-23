@@ -6,6 +6,7 @@
     <string name="false_button">False</string>
     <string name="next_button">Next</string>
     <string name="previous_button">Previous</string>
+    <string name="back_button">Back</string>
 
     <!-- Toasts -->
     <string name="correct_toast">Correct!</string>

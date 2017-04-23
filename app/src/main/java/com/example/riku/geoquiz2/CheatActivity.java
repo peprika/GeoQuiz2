@@ -20,6 +20,7 @@ public class CheatActivity extends AppCompatActivity {
     private boolean mAnswerIsTrue;
     private TextView mAnswerTextView;
     private Button mShowAnswer;
+    private Button mBackButton;
 
     // Remember that the user cheated, if s/he did so
     private void setAnswerShownResult(boolean isAnswerShown) {
@@ -52,6 +53,15 @@ public class CheatActivity extends AppCompatActivity {
                 }
                 //Remember that the user cheated
                 setAnswerShownResult(true);
+            }
+        });
+
+        // Back button
+        mBackButton = (Button)findViewById(R.id.back_button);
+        mBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }
