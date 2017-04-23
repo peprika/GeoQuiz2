@@ -5,12 +5,14 @@
               android:gravity="center"
               android:orientation="vertical" >
 
+    <!-- Question text view -->
     <TextView
         android:id="@+id/question_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="24dp" />
 
+    <!-- True/False buttons -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,6 +32,7 @@
 
     </LinearLayout>
 
+    <!-- Next/Previous buttons -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -48,5 +51,12 @@
             android:src="@drawable/arrow_right"/>
 
     </LinearLayout>
+
+    <!-- Cheat button -->
+    <Button
+        android:id="@+id/cheat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cheat_button"/>
 
 </LinearLayout>

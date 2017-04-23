@@ -17,4 +17,11 @@
     <string name="question3">Sydney is the capital of Australia.</string>
     <string name="question4">Maine is the closest US\'s state to Africa.</string>
     <string name="question5">San Marino is the world\'s smallest country.</string>
+
+    <!-- Cheating -->
+    <string name="cheat_button">Cheat!</string>
+    <string name="warning_text">Are you sure you want to do this?</string>
+    <string name="show_answer_button">Show Answer</string>
+    <string name="judgement_toast">Cheating is wrong.</string>
+
 </resources>
