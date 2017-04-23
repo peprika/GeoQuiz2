@@ -17,6 +17,7 @@ import android.widget.Toast;
 public class QuizActivity extends AppCompatActivity {
 
     private static final String TAG = "QuizActivity";
+    private static final String KEY_INDEX = "index";
 
     private Button mTrueButton;
     private Button mFalseButton;
@@ -108,7 +109,21 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
+        // If there's a saved state, get the current index
+        if (savedInstanceState != null) {
+            mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
+        }
+
+        // Finally update the question
         updateQuestion();
+    }
+
+    // Save the current index on rotation
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        Log.i(TAG, "onSaveInstanceState() called");
+        savedInstanceState.putInt(KEY_INDEX, mCurrentIndex);
     }
 
     // Logging activity lifecycle methods for practice
